@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>solar eclipse</title>
+      <style>
+          h1 {
+              text-align:center;
+              font-size:50px;
+              color:midnightblue;
+              font-weight:bold;
+              font-family:broadway;
+          }
+          body {
+              background-color:lightsteelblue;
+              color:forestgreen;
+          }
+          h2 {
+              color:indigo;
+              font-family:georgia;
+          }
+          h5 {
+              color:indigo;
+              font-family:ariel;
+          }
+
+      </style>
+   </head>
+   <body>
+        <h1>SOLAR ECLIPSE</h1>
+        <br>
+        <img src="data:image/jpeg;base64,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" width="500px" height="300">
+        <img src="https://static.bhphotovideo.com/explora/sites/default/files/styles/960/public/solar-eclipse-usa-2017.jpg?itok=xkuheTmC" width="500px" height="300px">
+       <h2>What is a Solar Eclipse?</h2>
+       A solar eclipse is when the moon entirely covers the surface of the sun.
+       This is when the moon passes between the Earth and the sun covering the sight line from Earth to the sun; this is how the moon can look as if it is blocking the sun.
+       As the moon covers the sun, the motion is gradual, so at different points in time, the eclipse may not be a total eclipse; it will be a partial solar eclipse.
+       The last time there was a solar elcipse, it was in 1979, but on August 21, 2017 there will be a solar eclipse across the United States.
+    <br>
+    <br>
+    <img src="https://c.tadst.com/gfx/750x500/types-of-solar-eclipses.png?1" width="500px" height="350px">
+    <br>
+     <h2>Types of Eclipses</h2>
+     <table border="1">
+         <tr>
+            <th></th>
+            <th>Lunar Eclipse</th>
+            <th>Solar Eclipse</th>
+         </tr>
+         <tr>
+             <td>Partial</td>
+             <td>A partial lunar eclipse happens when part of the moon is in the Earth's shadow.
+                 The moon looks darker on the surface due to Earth's shadow and the sunlight that passes through Earth's atmosphere.
+             </td>
+             <td>A partial solar eclipse happens when the sun and moon are not direcly, nor exactly lined up.</td>
+         </tr>
+         <tr>
+             <td>Total</td>
+             <td>A total lunar eclipse happens when the moon and the sun are on opposite sides of the Earth.
+                 The sunlight passes through the Earth's atmosphere and therefore can look red.
+             </td>
+             <td>A total solar eclupse happens when the sun and moon directly line up with the Earth.
+                 Very few people can visible see the total solar eclipse; only on the center line.
+             </td>
+         </tr>
+     </table>
+     <br>
+   
+   
+   <br> 
+    <h2>How to View a Solar Eclipse</h2>
+    The ability to see the solar eclipse is limited in the areas it will pass through.
+    There are prime places to be to view the solar eclipse as it is only visible in a narrow strip across the United States.
+    Those that are not located on the center line will not see the total eclipse, only a partial one.
+    <br>
+    To actually view the solar eclipse requires solar viewing glasses to protect people's eyes from looking directly into the sun.
+    However, if you do not own a pair of these special solar eclipse viewing glasses, you can create a pinhole projector with household items.
+    A cereal box, a piece of white paper, nail, aluminum foil, sissors, tape and a pencil will help you create a pinhole projector with a few simple steps.
+    <br>
+    <ol>
+        <li>Trace the bottom of the cereal box onto the piece of paper and cut it out</li>
+        <li>Tape the paper inside the cereal box</li>
+        <li>Cut rectangles at each corner of the box</li>
+        <li>Cover the left corner with aluminum foil</li>
+        <li>Create a hole in the foil using the nail</li>
+    </ol>
+    <br>
+    <img src="data:image/jpeg;base64,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" height="300px" width="300px">
+    <img src="https://img.purch.com/w/640/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxNy8zMTYvaTAyL3N1bi1lY2xpcHNlLXZpZXdpbmctMTIwNTA5Yi0wMi5qcGc/MTQ0MjA2OTczNg==" height="300px" width="300px">
+    <img src="https://cnet3.cbsistatic.com/img/3o1knC_pszw7uPt56Gr070aKIug=/770x433/2017/08/18/7417a7e6-cd53-4586-85ec-937cc34d652d/news-0818-solareclipse.jpg" width="300px" height="300px">
+    <br>
+     <br>
+    Furthermore, NASA will livestream the solar eclipse on 
+    <br>
+    <a href="https://eclipse2017.nasa.gov/">NASA Solar Eclipse Livestream</a>
+    on August 21, 2017 as it becomes visible from coast to coast. This is especially useful if you are not located in the areas the solar eclipse will be most visible from.
+    <br>
+    <br>
+       <img src="https://eclipse2017.nasa.gov/sites/default/files/safety_2.JPG">
+    <br>
+    <h2>The main places (in the United States) the solar eclipse will pass through are:</h2>
+    <ul>
+        <li>North Carolina</li>
+        <li>South Carolina</li>
+        <li>Tennessee</li>
+        <li>Georgia</li>
+        <li>Kentucky</li>
+        <li>Illinois</li>
+        <li>Missouri</li>
+        <li>Kansas</li>
+        <li>Nebraska</li>
+        <li>Wyoming</li>
+        <li>Idaho</li>
+        <li>Oregon</li>
+     </ul>
+      <br>
+     <h2>Where and When to see the Total Solar Eclipse</h2>
+     <table border="1">
+         <tr>
+             <th>State</th>
+             <th>Start Time</th>
+             <th>End Time</th>
+         </tr>
+         <tr>
+            <td>Oregon</td>
+            <td>9:06 AM</td>
+            <td>11:41 AM</td>
+         </tr>
+         <tr>
+             <td>Idaho</td>
+             <td>10:15 AM</td>
+             <td>12:58 PM</td>
+         </tr>
+         <tr>
+             <td>Wyoming</td>
+             <td>10:22 AM</td>
+             <td>1:09 PM</td>
+         </tr>
+         <tr>
+             <td>Nebraska</td>
+             <td>11:37 AM</td>
+             <td>2:29 PM</td>
+         </tr>
+         <tr>
+             <td>Missouri</td>
+             <td>11:46 AM</td>
+             <td>2:41 PM</td>
+         </tr>
+         <tr>
+             <td>Illinois</td>
+             <td>11:52 AM</td>
+             <td>2:47 PM</td>
+         </tr>
+         <tr>
+             <td>Kentucky</td>
+             <td>11:54 AM</td>
+             <td>2:49 PM</td>
+         </tr>
+         <tr>
+             <td>Tennessee</td>
+             <td>11:58 AM</td>
+             <td>2:54 PM</td>
+         </tr>
+         <tr>
+             <td>Georgia</td>
+             <td>1:06 PM</td>
+             <td>4:01 PM</td>
+         </tr>
+         <tr>
+             <td>South Carolina</td>
+             <td>1:03 PM</td>
+             <td>4:06 PM</td>
+         </tr>
+     </table>
+     <br>
+     <img src="https://eclipse2017.nasa.gov/sites/default/files/nasa_eclipse_map.jpg" width="500px" height="300px">
+     <br>
+    <h5>For more information visit</h45>
+    <br>
+    <a href="https://eclipse2017.nasa.gov/eclipse-who-what-where-when-and-how">NASA.gov Solar Eclipse 2017</a>
+    <br>
+    <a href="https://www.space.com/33797-total-solar-eclipse-2017-guide.html">Space.com Total Solar Eclipse 2017</a>
+    <br>
+    <a href="https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-an-eclipse-58">NASA.gov What is an Eclipse?</a>
+    <br>
+    <a href="http://people.com/home/how-to-see-the-solar-eclipse-without-special-glasses-if-you-have-a-cereal-box-you-can-watch/">People.com Solar Eclipse 2017</a>
+    </body>
+</html>
