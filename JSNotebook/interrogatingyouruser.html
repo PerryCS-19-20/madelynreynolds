@@ -1,0 +1,65 @@
+ <!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>User Input and Variables</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>What I learned today...</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+    function start(){
+       var firstname=readLine("What is your first name?");
+       var lastname=readLine("What is your last name?");
+       var middlename=readLine("What is your middle initial");
+       var age=readInt("What year were you born in?");
+       var year=readLine("What grade level are you in?");
+       var walk=readBoolean("Do you walk to school?");
+       var homeworkhours=readInt("How many hours do you plan on doing homework tonight?");
+       var weekend=readBoolean("Do you have plans for the weekend?");
+       var plans=readLine("What are your plans for the weekend?");
+       var subject=readLine("What is your favorite subject in school?");
+       var music=readLine("Who is your favorite music artist?");
+       var pet=readLine("Do you have a pet?");
+       print("Subject: " + lastname);
+       print(", " + firstname);
+       println(" " + middlename);
+       println("Born in: " + age);
+       print(year);
+       println(", Walks to school: " + walk);
+       println("Plans: ");
+       print(homeworkhours);
+       println(" hours homework");
+       print("Weekend: " + weekend);
+       println(", " + plans);
+       println("Other Information: ");
+       println("Subject: " + subject);
+       println("Favorite Music Artist: " + music);
+       println("Pet: " + pet);
+    }
+
+
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    
+  </body>
+</html>
