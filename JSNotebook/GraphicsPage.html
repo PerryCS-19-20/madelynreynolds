@@ -14,7 +14,14 @@
     </div>
     
     <!-- Describe what this notebook page is showing -->
-    <p><em>What I learned today...</em></p>
+    <p><em>This activity creates a visual image using shapes such as circles, rectangles, and lines.To create these said shapes, 
+        one must first prepare the canvas, then input the shape wanted to be drawn. For example, to create a circle, you would use 
+        var circle= new Circle (x coordinate, y coordinate, radius), in the x-coordinate, y-coordinate, and radius spots, one may 
+        input the values they would prefer. To create a rectangle for example, the function 
+        var rect = new Rect (x coordinate point, y coordinate, width, height) would create the rectangle; and same as the circle,
+        one can choose the input values. After the shapes are created, you can set the color using the .setColor("") function, then 
+        use the canvas.draw() function to draw all the shapes.
+        </em></p>
     
     <!-- Below is the code that will run -->
     <div>
@@ -24,7 +31,16 @@
       </div>
 
 <script class="code">
-canvas.prepare();
+    function start(){
+        canvas.prepare();
+        var rect = new Rect(0,0,canvas.getWidth(), canvas.getHeight());
+        rect.setColor("blue");
+        canvas.add(rect);
+        var circle1= new Circle (canvas.getWidth()/2, canvas.getHeight()/2,50);
+        circle1.setColor("yellow");
+        canvas.add(circle1);
+        canvas.draw();  
+    }
 
 </script>
       <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
