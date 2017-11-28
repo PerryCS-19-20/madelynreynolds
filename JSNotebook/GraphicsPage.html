@@ -34,11 +34,38 @@
     function start(){
         canvas.prepare();
         var rect = new Rect(0,0,canvas.getWidth(), canvas.getHeight());
-        rect.setColor("blue");
+        rect.setColor("green");
         canvas.add(rect);
-        var circle1= new Circle (canvas.getWidth()/2, canvas.getHeight()/2,50);
-        circle1.setColor("yellow");
+        var circle1= new Circle (canvas.getWidth()/2, canvas.getHeight()/2,150);
+        circle1.setColor("red");
         canvas.add(circle1);
+        var circle2= new Circle (canvas.getWidth()/2, canvas.getHeight()/4,75);
+        circle2.setColor("black");
+        canvas.add(circle2);
+        var circle3= new Circle (7.5*canvas.getWidth()/16, 3*canvas.getHeight()/8,15);
+        circle3.setColor("black");
+        canvas.add(circle3);
+        var circle4= new Circle (7*canvas.getWidth()/16, 3.5*canvas.getHeight()/8,15);
+        circle4.setColor("black");
+        canvas.add(circle4);
+        var circle5= new Circle (7.25*canvas.getWidth()/16, 4.5*canvas.getHeight()/8,15);
+        circle5.setColor("black");
+        canvas.add(circle5);
+        var circle6= new Circle (8.25*canvas.getWidth()/16, 3.5*canvas.getHeight()/8,15);
+        circle6.setColor("black");
+        canvas.add(circle6);
+        var circle7= new Circle (8.75*canvas.getWidth()/16, 4.5*canvas.getHeight()/8,15);
+        circle7.setColor("black");
+        canvas.add(circle7);
+        var circle8= new Circle (canvas.getWidth()/2, 4*canvas.getHeight()/8,15);
+        circle8.setColor("black");
+        canvas.add(circle8);
+        var circle9= new Circle (canvas.getWidth()/2, 4.75*canvas.getHeight()/8,15);
+        circle9.setColor("black");
+        canvas.add(circle9);
+        var circle10= new Circle (8.8*canvas.getWidth()/16, 3.55*canvas.getHeight()/8,15);
+        circle10.setColor("black");
+        canvas.add(circle10);
         canvas.draw();  
     }
 
