@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>Lawn Decoration Figure</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>This activity asks the use if it is winter. If the user answers yes, a picture of a snowman will appear. If the user 
+            answers no, then the picture of a tumbleweed person will appear. The visual picture utilizes both rectangles and 
+            circles to create the snowmen and background colors. For example, to create a circle, you would use 
+            var circle= new Circle (x coordinate, y coordinate, radius) and to create a rectangle for example, the function 
+            var rect = new Rect (x coordinate point, y coordinate, width, height.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+        function start (){
+            var winter = readBoolean("Is it Winter?");
+            if (winter){
+                canvas.prepare();
+                var rect = new Rect(0,0,canvas.getWidth(), canvas.getHeight());
+                rect.setColor("blue");
+                canvas.add(rect);
+                var rad = canvas.getHeight()/6;
+                var circle1 = new Circle(canvas.getWidth()/2,canvas.getHeight()-rad,rad);
+                circle1.setColor("white");
+                canvas.add(circle1);
+                var rad2 = 2*canvas.getHeight()/18;
+                var circle2 = new Circle (canvas.getWidth()/2, 7*canvas.getHeight()/12, rad2);
+                circle2.setColor("white");
+                canvas.add(circle2);
+                var rad3 = 4*canvas.getHeight()/54;
+                var circle3 = new Circle (canvas.getWidth()/2, 5*canvas.getHeight()/12, rad3);
+                circle3.setColor("white");
+                canvas.add(circle3);
+                canvas.draw();
+            } 
+            else{
+               canvas.prepare();
+                var rect = new Rect(0,0,canvas.getWidth(), canvas.getHeight());
+                rect.setColor("gray");
+                canvas.add(rect);
+                var rad = canvas.getHeight()/6;
+                var circle1 = new Circle(canvas.getWidth()/2,canvas.getHeight()-rad,rad);
+                circle1.setColor("brown");
+                canvas.add(circle1);
+                var rad2 = 2*canvas.getHeight()/18;
+                var circle2 = new Circle (canvas.getWidth()/2, 7*canvas.getHeight()/12, rad2);
+                circle2.setColor("brown");
+                canvas.add(circle2);
+                var rad3 = 4*canvas.getHeight()/54;
+                var circle3 = new Circle (canvas.getWidth()/2, 5*canvas.getHeight()/12, rad3);
+                circle3.setColor("brown");
+                canvas.add(circle3);
+                canvas.draw();
+            }
+        }
+
+        
+   
+
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>    
+  </body>
+</html>
