@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>Conversion Functions</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>This function will ask the use for a distance value in miles and convert the value into kilometers, meters, feet, inches, and 
+            millimeters.To do so, one needs to use functions to convert the values from miles to kilometers, kilometers to metes, meters to feet, feet to inches, 
+            and inches to millimeters.  </em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+        function start(){
+         var miles = readInt("What is a distance in miles?");
+         var kilometers = miles * 1.60934;
+         var meters = kilometers * 1000;
+         var feet = meters * 3.28084;
+         var inches = feet * 12;
+         var millimeters = inches * 25.4;
+         println("Distance in miles: " + miles);
+         print("Distance in kilometers: ");
+         println(milesToKilometers(miles));
+         print("Distance in meters: ");
+         println(kilometersToMeters(kilometers));
+         print("Distance in feet: ");
+         println(metersToFeet(meters));
+         print("Distance in inches: ");
+         println(feetToInches(feet));
+         print("Distance in milimeters: ");
+         println(inchesToMillimeters(inches));
+        }
+        function milesToKilometers(miles){
+             var kilometers = miles * 1.60934;
+             return kilometers;
+        }
+        function kilometersToMeters(kilometers){
+             var meters = kilometers * 1000;
+             return meters;
+        }
+        function metersToFeet(meters){
+             var feet = meters * 3.28084;
+             return feet;
+         }
+        function feetToInches(feet){
+             var inches = feet * 12;
+             return inches;
+         }
+        function inchesToMillimeters(inches){
+             var millimeters = inches * 25.4;
+             return millimeters;
+         }
+         
+         
+         
+         
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    
+  </body>
