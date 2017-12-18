@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>Tiles</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>This notebook page will print out a series of circles 
+            to create a tile like pattern on the screen. The circles
+            will be randomly assigned a color using the Math.random() 
+            function in the rgb() function. Each new circle will be equal
+            in radius and create a row before moving down and create another
+            row of the same length using a while loop.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        tilingCircles <!-- Program title -->
+      </div>
+
+<script class="code">
+   function start(){
+    canvas.prepare();
+    var count = readInt("How many circles in the row?");
+    println("How many cirlce in the row? " + count);
+    var diameter = (canvas.getWidth()/count);
+    var number=0;
+    while (number < count){
+    var x = (number*diameter) + (diameter/2);
+    var y = diameter;
+    var rad = diameter/2;
+    var circle = new Circle(x, y, diameter/2);
+    var R = Math.random()*255;
+    var G = Math.random()*255;
+    var B = Math.random()*255;
+    var color = rgb(R, G, B);
+    circle.setColor(color);
+    canvas.add(circle);
+    number=number + 1; 
+    var z = 2;
+    while(z < canvas.getHeight()){
+        var circle2 = new Circle(x,diameter*z ,rad);
+        var z = z + 1;
+        var R2 = Math.random()*255;
+        var G2 = Math.random()*255;
+        var B2 = Math.random()*255;
+        var color = rgb(R2, G2, B2);
+        circle2.setColor(color);
+        canvas.add(circle2);
+    }
+    }
+    canvas.draw();
+}
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>    
+  </body>
+</html>
